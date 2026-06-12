@@ -4,54 +4,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Images</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Forms</title>
 </head>
 
 <body>
-    <img width="230" src="rock.png" alt="rock image">
-    <br>
-    <table>
-        <caption>Student Details</caption>
-        <thead>
-            <tr>
-                <th>Name</th>
-                <th>Designation</th>
-                <th>Fav_Language</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Shreya</td>
-                <td>Student</td>
-                <td>Python</td>
-            </tr>
-            <tr>
-                <td colspan="2">Sam</td>
-                <td rowspan="2">Python</td>
-            </tr>
-            <tr>
-                <td colspan="2">Sam</td>
-
-            </tr>
-        </tbody>
-        <tfoot>
-            <tr>
-                <td colspan="2">Sam</td>
-                <td rowspan="2">Foot</td>
-            </tr>
-        </tfoot>
-    </table>
-    <ul type = "square">
-        <li>Harry</li>
-        <li>Rohan</li>
-        <li>Ria</li>
-    </ul>
-    <ol type = "A">
-        <li>Harry</li>
-        <li>Rohan</li>
-        <li>Ria</li>
-    </ol>
+    <h1>Form to apply for TA</h1>
+    <form action="post">
+        <div>
+            <label for="username"> Enter your username</label>
+            <input type="text" id="username" name="username" placeholder="Enter your username">
+        </div>
+        <div>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="male">Female</label>
+        </div>
+        <div>
+            <input type="checkbox" id="Subscribe" name="Subscribe" value="yes">
+            <label for="Subscribe">Subscribe to newsletter</label>
+        </div>
+        <div>
+            <label for = "comment">Enter your comment here</label>
+            <br>
+            <textarea id = "comment" name = "comment" rows = "4" columns = " 50"></textarea>
+        </div>
+        <div>
+            <select name = "fruits">
+                <option value = "apple">Apple</option>
+                <option value = "orange">Orange</option>
+                <option value = "mango">Mango</option>
+            </select>
+        </div>
+    </form>
 </body>
 
 </html>
